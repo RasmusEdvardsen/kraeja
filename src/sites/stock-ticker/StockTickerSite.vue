@@ -19,7 +19,7 @@ const addTicker = async () => tickers.value.push(await getTicker(ticker.value))
 </script>
 
 <template>
-  <div class="container">
+  <div class="stock-ticker-site">
     <form class='stock-picker'>
       <input type="text" name="stock-ticker" id="stock-ticker" v-model="ticker">
       <button type="submit" @click.prevent="addTicker">Add +</button>
